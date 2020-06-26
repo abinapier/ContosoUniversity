@@ -1,5 +1,38 @@
 ﻿/* Please see documentation at https://docs.microsoft.com/aspnet/core/client-side/bundling-and-minification
 for details on configuring this project to bundle and minify static web assets. */
+@import url('https://fonts.googleapis.com/css2?family=Roboto&family=Roboto+Slab:wght@500&display=swap');
+
+
+h1, h2, h3, h4, h5 {
+    font-family: 'Roboto Slab', serif;
+    text-align: center;
+    color: #2B3A67;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
+.splash {
+    background-color: #2B3A67;
+    width: 100%;
+    text-align: center;
+    height: 500px;
+    padding: 35px;
+    background-image: url('../images/campus.jpg');
+    background-position: top; /* Center the image */
+    background-repeat: no-repeat; /* Do not repeat the image */
+    background-size: cover;
+}
+
+.splash h1, .splash p {
+    color: #2B3A67;
+}
+
+.bg-dark {
+    background-color: #2B3A67!important;
+}
+
 
 a.navbar-brand {
   white-space: normal;
@@ -9,19 +42,25 @@ a.navbar-brand {
 
 /* Provide sufficient contrast against white background */
 a {
-  color: #0366d6;
+    color: #447604;
 }
 
-.btn-primary {
-  color: #fff;
-  background-color: #1b6ec2;
-  border-color: #1861ac;
+.btn-primary, .btn-default {
+    color: #fff;
+    background-color: #447604;
+    border-color: #447604;
 }
 
 .nav-pills .nav-link.active, .nav-pills .show > .nav-link {
   color: #fff;
   background-color: #1b6ec2;
   border-color: #1861ac;
+}
+.contact{
+    text-align:center;
+}
+.success {
+    background-color: #E4FDC4;
 }
 
 /* Sticky footer styles
@@ -68,4 +107,5 @@ body {
   width: 100%;
   white-space: nowrap;
   line-height: 60px; /* Vertically center the text there */
+  text-align: center;
 }
